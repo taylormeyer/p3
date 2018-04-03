@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    background: #ccc;
 }
 
 .billform {
@@ -11,12 +12,15 @@ body {
 
 h2 {
     margin: 40px 0px;
+    color: #0c5460;
 }
 
 /*.billform label {*/
 /*text-align: right;*/
 /*}*/
-
+.billform label{
+color: #555;
+}
 .billform label span {
     display: block;
     color: #f00;
