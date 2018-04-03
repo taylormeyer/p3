@@ -8,7 +8,6 @@ class BillSplitterCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
-     *
      * @return bool
      */
     public function authorize()
@@ -18,14 +17,13 @@ class BillSplitterCreateRequest extends FormRequest
 
     /**
      * Get the validation rules that apply to the request.
-     *
      * @return array
      */
     public function rules()
     {
         return [
-                    'split_way' => 'required|numeric',
-                    'tab' => 'required|numeric'
-                ];
+            'split_way' => 'required|numeric',
+            'tab' => 'required|numeric'
+        ];
     }
 }
