@@ -18,9 +18,10 @@ h2 {
 /*.billform label {*/
 /*text-align: right;*/
 /*}*/
-.billform label{
-color: #555;
+.billform label {
+    color: #555;
 }
+
 .billform label span {
     display: block;
     color: #f00;

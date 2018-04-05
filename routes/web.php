@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::post('save-data', "BillSplitterController@store");
+Route::get('/', "BillSplitterController@index");
+Route::post('calc-data', "BillSplitterController@calc_data");

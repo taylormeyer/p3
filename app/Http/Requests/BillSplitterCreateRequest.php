@@ -22,8 +22,8 @@ class BillSplitterCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'split_way' => 'required|numeric',
-            'tab' => 'required|numeric'
+            'split_way' => 'required|numeric|min:0',
+            'tab' => 'required|numeric|min:0'
         ];
     }
 }

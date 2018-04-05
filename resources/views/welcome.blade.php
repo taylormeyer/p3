@@ -1,23 +1,7 @@
-<!DOCTYPE html>
-
-<html lang='en'>
-<head>
-    <meta charset='utf-8'>
-
-    <title>The Magic Bill Splitter</title>
-    <meta name='description' content='The Magic Bill Splitter'>
-    <meta name='author' content='Taylor Meyer Site'>
-
-    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
-          rel='stylesheet' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm'
-          crossorigin='anonymous'>
-    <link rel='stylesheet' href='css/styles.css'>
-</head>
-
-<body>
-
+@extends('layouts.app')
+@section('content')
 <h2 class="text-center">The Magic Bill Splitter</h2>
-{!! Form::open(['url' => 'save-data', 'method' => 'POST', "name"=>'bill-splitter', "id"=>'bill-splitter', "class"=>"billform"] ) !!}
+{!! Form::open(['url' => 'calc-data', 'method' => 'POST', "name"=>'bill-splitter', "id"=>'bill-splitter', "class"=>"billform"] ) !!}
 <div class="row form-group">
     <div class="col-sm-5 text-right">
         <label>Split how many ways? <span>* Required</span></label>
@@ -73,5 +57,4 @@
 @endif
 
 {!! Form::close() !!}
-</body>
-</html>
+@endsection
